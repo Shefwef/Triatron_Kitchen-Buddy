@@ -75,14 +75,15 @@ Batch Size: 8
 
 Results
 The fine-tuned model achieved the following training and validation losses:
-
+```bash
 Epoch 1: Training Loss: 22.4071, Validation Loss: 7.8087
 Epoch 2: Training Loss: 3.7735, Validation Loss: 1.0182
 Epoch 3: Training Loss: 1.3876, Validation Loss: 0.4040
+```
 
 Model Repository
 You can access the fine-tuned model on Hugging Face at the following link:
-Banglish-to-Bengali Model
+[banglish-to-bangla-model](https://huggingface.co/namisa/banglish-to-bangla-model)
 
 # Challenge 02:
 
@@ -112,12 +113,28 @@ Mofa's Kitchen Buddy is a backend system powered by a Large Language Model (LLM)
 - **POST /ingredients**: Add a new ingredient.
 - **GET /getingredients**: Get all available ingredients.
 - **PUT /ingredients/:name**: Update an ingredient by its name.
+ ```bash
+{
+    "name": " ",
+    "quantity": " ",
+    "unit": " "
+  },
+```
+
 
 ### Recipe Management
 
 - **POST /recipes**: Add a new recipe.
 - **GET /getrecipes**: Get all stored recipes.
 - **POST /recipes/search**: Search for recipes based on available ingredients.
+
+```bash
+  {
+    "input": " ",
+    "recipe": " ",
+    "timestamp": " "
+  }
+```
 
 ## Database Design
 
@@ -132,4 +149,19 @@ The data is stored in JSON format within the `data` folder:
 
    ```bash
    git clone https://github.com/your-username/mofas-kitchen-buddy.git
+   ```
+2. Add dotenv file
+   ```bash
+   PORT=5000
+   GROQ_API = " "
+   ```
+
+3. Install dependencies
+   ```bash
+   npm install
+   ```
+4. Run the server
+  ```bash
+  node server.js
+  ```
 
