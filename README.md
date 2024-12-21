@@ -1,7 +1,5 @@
 # Challenge 01:
 
-# Triatron_Kitchen-Buddy
-
 # Banglish-to-Bengali Transliteration
 
 Iqbal's laptop has been hacked, and he can't use his Avro keyboard to type in Bengali anymore. He decides to build a model that converts Banglish (Bengali written in English letters) into proper Bengali script so he can continue his heated Facebook comment debate.
