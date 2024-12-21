@@ -82,9 +82,3 @@ Epoch 3: Training Loss: 1.3876, Validation Loss: 0.4040
 Model Repository
 You can access the fine-tuned model on Hugging Face at the following link:
 Banglish-to-Bengali Model
-
-License
-This project is licensed under the MIT License.
-
-vbnet
-Copy code
