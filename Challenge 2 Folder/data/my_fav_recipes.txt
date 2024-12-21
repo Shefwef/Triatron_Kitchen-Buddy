@@ -1,0 +1,12 @@
+[
+  {
+    "input": "potato,sugar,salt",
+    "recipe": "Here is a recipe for you with the provided ingredients:\n- **Recipe Name:** Classic Roasted Potatoes\n- **Servings:** 4\n- **Ingredients:**\n  - 4 large potatoes, cut into 1-inch wedges\n  - 2 tablespoons sugar\n  - 1 teaspoon salt\n- **Preparation Steps:**\n  1. Preheat the oven to 425°F (220°C).\n  2. Line a baking sheet with aluminum foil.\n  3. In a bowl, mix together sugar and salt.\n  4. Toss the potatoes with the sugar-salt mixture until they are evenly coated.\n  5. Place the potatoes on the prepared baking sheet in a single layer.\n- **Cooking Instructions:**\n  1. Bake for 20-25 minutes or until tender and golden brown.\n  2. Flip the potatoes halfway through the cooking time.\n  3. Remove from the oven and serve hot.",
+    "timestamp": "2024-12-21T15:17:58.794Z"
+  },
+  {
+    "input": "potato,sugar,salt",
+    "recipe": "Here is a recipe for you:\n- **Name**: Roasted potatoes\n- **Ingredients**: potatoes, salt\n- **Preparation Steps**: 1. preheat oven to 400 degrees F, 2. cut potatoes into desired shape, 3. season with salt\n- **Cooking Instructions**: roast in the oven for 20-25 minutes or until tender\n Note that the provided function is in Python.",
+    "timestamp": "2024-12-21T15:20:19.392Z"
+  }
+]
