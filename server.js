@@ -1,7 +1,8 @@
 const express = require("express");
 const cors = require("cors");
 const dotenv = require("dotenv");
-const mongoose = require("mongoose");
+const fs = require("fs");
+const path = require("path");
 
 // Load environment variables
 dotenv.config();
@@ -27,14 +28,29 @@ app.use((err, req, res, next) => {
   res.status(500).send({ message: "Internal Server Error" });
 });
 
-// MongoDB connection
-mongoose
-  .connect(process.env.MONGO_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
-  .then(() => console.log("MongoDB connected"))
-  .catch((err) => console.log("MongoDB connection error:", err));
+// File paths
+const ingredientFilePath = path.join(__dirname, "ingredients.txt");
+const recipeFilePath = path.join(__dirname, "recipes.txt");
+
+// Helper function to read from a file
+const readFromFile = (filePath) => {
+  return new Promise((resolve, reject) => {
+    fs.readFile(filePath, "utf-8", (err, data) => {
+      if (err) reject(err);
+      resolve(data ? JSON.parse(data) : []);
+    });
+  });
+};
+
+// Helper function to write to a file
+const writeToFile = (filePath, data) => {
+  return new Promise((resolve, reject) => {
+    fs.writeFile(filePath, JSON.stringify(data, null, 2), (err) => {
+      if (err) reject(err);
+      resolve();
+    });
+  });
+};
 
 // Start the server
 const PORT = process.env.PORT || 5000;
