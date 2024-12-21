@@ -83,3 +83,53 @@ Epoch 3: Training Loss: 1.3876, Validation Loss: 0.4040
 Model Repository
 You can access the fine-tuned model on Hugging Face at the following link:
 Banglish-to-Bengali Model
+
+# Challenge 02:
+
+# Mofa's Kitchen Buddy
+
+Mofa's Kitchen Buddy is a backend system powered by a Large Language Model (LLM) that helps users manage their ingredients and suggests recipes based on what they have at home. The system allows users to input available ingredients, update them when shopping, and receive recipe recommendations tailored to their preferences, such as craving something sweet or a specific type of dish.
+
+## Features
+
+- **Ingredient Management**: Input and update available ingredients in your kitchen.
+- **Recipe Management**: Store and retrieve favorite recipes, including details like ingredients, instructions, and category.
+- **Recipe Suggestion**: Search for recipes based on the ingredients you have at home.
+- **Chatbot Integration**: Interact with a chatbot to suggest recipes based on your preferences.
+
+## Technology Stack
+
+- **Node.js**: JavaScript runtime for building the backend server.
+- **Express.js**: Web framework for building APIs.
+- **File System (fs)**: Used for reading and writing ingredients and recipes data from text files.
+- **JSON**: For storing ingredients and recipes in a structured format.
+- **Large Language Model (LLM)**: Integrated to interact with users and suggest recipes.
+
+## API Endpoints
+
+### Ingredient Management
+
+- **POST /ingredients**: Add a new ingredient.
+- **GET /getingredients**: Get all available ingredients.
+- **PUT /ingredients/:name**: Update an ingredient by its name.
+
+### Recipe Management
+
+- **POST /recipes**: Add a new recipe.
+- **GET /getrecipes**: Get all stored recipes.
+- **POST /recipes/search**: Search for recipes based on available ingredients.
+
+## Database Design
+
+The data is stored in JSON format within the `data` folder:
+
+- **ingredients.txt**: Stores the list of ingredients with details like name, quantity, and unit.
+- **recipes.txt**: Stores favorite recipes with details like name, ingredients, instructions, and category.
+
+## Setup Instructions
+
+1. Clone the repository to your local machine:
+
+   ```bash
+   git clone https://github.com/your-username/mofas-kitchen-buddy.git
+
