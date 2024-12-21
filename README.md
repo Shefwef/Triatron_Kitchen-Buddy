@@ -164,4 +164,32 @@ The data is stored in JSON format within the `data` folder:
   ```bash
   node server.js
   ```
+Example Usage
+Add Ingredients:
+Make a POST request to /ingredients with the following JSON body:
 
+
+{
+  "name": "Sugar",
+  "quantity": "200",
+  "unit": "grams"
+}
+Get All Ingredients:
+Make a GET request to /getingredients to retrieve the list of all ingredients.
+
+Add Recipes:
+Make a POST request to /recipes with the following JSON body:
+
+{
+  "name": "Chocolate Cake",
+  "ingredients": ["Flour", "Sugar", "Eggs", "Butter"],
+  "instructions": "Mix all ingredients and bake for 30 minutes at 350°F.",
+  "category": "Dessert"
+}
+Search Recipes by Ingredients:
+Make a POST request to /recipes/search with the following JSON body:
+
+
+{
+  "availableIngredients": ["Sugar", "Flour"]
+}
