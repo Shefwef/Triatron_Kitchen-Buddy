@@ -3,5 +3,345 @@
     "name": "Sugar",
     "quantity": "200",
     "unit": "grams"
+  },
+  {
+    "name": "Flour",
+    "quantity": "500",
+    "unit": "grams"
+  },
+  {
+    "name": "Eggs",
+    "quantity": "12",
+    "unit": "pieces"
+  },
+  {
+    "name": "Milk",
+    "quantity": "1",
+    "unit": "liter"
+  },
+  {
+    "name": "Butter",
+    "quantity": "250",
+    "unit": "grams"
+  },
+  {
+    "name": "Salt",
+    "quantity": "50",
+    "unit": "grams"
+  },
+  {
+    "name": "Baking Powder",
+    "quantity": "10",
+    "unit": "grams"
+  },
+  {
+    "name": "Cocoa Powder",
+    "quantity": "100",
+    "unit": "grams"
+  },
+  {
+    "name": "Vanilla Extract",
+    "quantity": "30",
+    "unit": "ml"
+  },
+  {
+    "name": "Olive Oil",
+    "quantity": "200",
+    "unit": "ml"
+  },
+  {
+    "name": "Garlic",
+    "quantity": "5",
+    "unit": "cloves"
+  },
+  {
+    "name": "Onion",
+    "quantity": "3",
+    "unit": "pieces"
+  },
+  {
+    "name": "Tomato",
+    "quantity": "6",
+    "unit": "pieces"
+  },
+  {
+    "name": "Chicken Breast",
+    "quantity": "4",
+    "unit": "pieces"
+  },
+  {
+    "name": "Lettuce",
+    "quantity": "1",
+    "unit": "head"
+  },
+  {
+    "name": "Cucumber",
+    "quantity": "2",
+    "unit": "pieces"
+  },
+  {
+    "name": "Carrot",
+    "quantity": "3",
+    "unit": "pieces"
+  },
+  {
+    "name": "Cheese",
+    "quantity": "200",
+    "unit": "grams"
+  },
+  {
+    "name": "Yogurt",
+    "quantity": "500",
+    "unit": "ml"
+  },
+  {
+    "name": "Lemon",
+    "quantity": "3",
+    "unit": "pieces"
+  },
+  {
+    "name": "Honey",
+    "quantity": "150",
+    "unit": "grams"
+  },
+  {
+    "name": "Mint",
+    "quantity": "1",
+    "unit": "bunch"
+  },
+  {
+    "name": "Basil",
+    "quantity": "1",
+    "unit": "bunch"
+  },
+  {
+    "name": "Chili Powder",
+    "quantity": "20",
+    "unit": "grams"
+  },
+  {
+    "name": "Paprika",
+    "quantity": "20",
+    "unit": "grams"
+  },
+  {
+    "name": "Rice",
+    "quantity": "1",
+    "unit": "kg"
+  },
+  {
+    "name": "Pasta",
+    "quantity": "500",
+    "unit": "grams"
+  },
+  {
+    "name": "Peas",
+    "quantity": "200",
+    "unit": "grams"
+  },
+  {
+    "name": "Potatoes",
+    "quantity": "1",
+    "unit": "kg"
+  },
+  {
+    "name": "Spinach",
+    "quantity": "200",
+    "unit": "grams"
+  },
+  {
+    "name": "Apple",
+    "quantity": "6",
+    "unit": "pieces"
+  },
+  {
+    "name": "Banana",
+    "quantity": "12",
+    "unit": "pieces"
+  },
+  {
+    "name": "Orange",
+    "quantity": "5",
+    "unit": "pieces"
+  },
+  {
+    "name": "Strawberries",
+    "quantity": "250",
+    "unit": "grams"
+  },
+  {
+    "name": "Blueberries",
+    "quantity": "200",
+    "unit": "grams"
+  },
+  {
+    "name": "Almonds",
+    "quantity": "100",
+    "unit": "grams"
+  },
+  {
+    "name": "Walnuts",
+    "quantity": "150",
+    "unit": "grams"
+  },
+  {
+    "name": "Cashews",
+    "quantity": "200",
+    "unit": "grams"
+  },
+  {
+    "name": "Peanut Butter",
+    "quantity": "500",
+    "unit": "grams"
+  },
+  {
+    "name": "Coconut Oil",
+    "quantity": "250",
+    "unit": "ml"
+  },
+  {
+    "name": "Oats",
+    "quantity": "1",
+    "unit": "kg"
+  },
+  {
+    "name": "Cornflour",
+    "quantity": "200",
+    "unit": "grams"
+  },
+  {
+    "name": "Soy Sauce",
+    "quantity": "150",
+    "unit": "ml"
+  },
+  {
+    "name": "Vinegar",
+    "quantity": "200",
+    "unit": "ml"
+  },
+  {
+    "name": "Sugar Syrup",
+    "quantity": "500",
+    "unit": "ml"
+  },
+  {
+    "name": "Raisins",
+    "quantity": "100",
+    "unit": "grams"
+  },
+  {
+    "name": "Dates",
+    "quantity": "250",
+    "unit": "grams"
+  },
+  {
+    "name": "Green Beans",
+    "quantity": "300",
+    "unit": "grams"
+  },
+  {
+    "name": "Broccoli",
+    "quantity": "1",
+    "unit": "head"
+  },
+  {
+    "name": "Cauliflower",
+    "quantity": "1",
+    "unit": "head"
+  },
+  {
+    "name": "Bell Pepper",
+    "quantity": "3",
+    "unit": "pieces"
+  },
+  {
+    "name": "Zucchini",
+    "quantity": "2",
+    "unit": "pieces"
+  },
+  {
+    "name": "Eggplant",
+    "quantity": "2",
+    "unit": "pieces"
+  },
+  {
+    "name": "Beef Mince",
+    "quantity": "500",
+    "unit": "grams"
+  },
+  {
+    "name": "Pork Chops",
+    "quantity": "4",
+    "unit": "pieces"
+  },
+  {
+    "name": "Salmon",
+    "quantity": "300",
+    "unit": "grams"
+  },
+  {
+    "name": "Tuna",
+    "quantity": "200",
+    "unit": "grams"
+  },
+  {
+    "name": "Shrimp",
+    "quantity": "400",
+    "unit": "grams"
+  },
+  {
+    "name": "Clams",
+    "quantity": "500",
+    "unit": "grams"
+  },
+  {
+    "name": "Mushrooms",
+    "quantity": "250",
+    "unit": "grams"
+  },
+  {
+    "name": "Chickpeas",
+    "quantity": "1",
+    "unit": "kg"
+  },
+  {
+    "name": "Kidney Beans",
+    "quantity": "1",
+    "unit": "kg"
+  },
+  {
+    "name": "Lentils",
+    "quantity": "1",
+    "unit": "kg"
+  },
+  {
+    "name": "Quinoa",
+    "quantity": "500",
+    "unit": "grams"
+  },
+  {
+    "name": "Tofu",
+    "quantity": "400",
+    "unit": "grams"
+  },
+  {
+    "name": "Paneer",
+    "quantity": "250",
+    "unit": "grams"
+  },
+  {
+    "name": "Whipping Cream",
+    "quantity": "500",
+    "unit": "ml"
+  },
+  {
+    "name": "Dark Chocolate",
+    "quantity": "200",
+    "unit": "grams"
+  },
+  {
+    "name": "White Chocolate",
+    "quantity": "200",
+    "unit": "grams"
   }
 ]
