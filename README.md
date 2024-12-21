@@ -40,28 +40,23 @@ To run the project, you need to install the following Python packages:
 - torch
 - huggingface_hub
 
-bash
-pip install datasets transformers torch huggingface_hub
-How to Use the Model
-You can load the fine-tuned model from Hugging Face and use it to transliterate Banglish text into Bengali. Here's an example of how to use the model:
-
-python
-Copy code
-from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
 
 # Load the fine-tuned model and tokenizer
+```bash
 model = AutoModelForSeq2SeqLM.from_pretrained("namisa/banglish-to-bangla-model")
 tokenizer = AutoTokenizer.from_pretrained("namisa/banglish-to-bangla-model")
+```
 
-# Transliterate Banglish text
+# Translate Banglish text
+```bash
 def transliterate_banglish(text):
     inputs = tokenizer(text, return_tensors="pt", max_length=128, truncation=True, padding="max_length")
     outputs = model.generate(input_ids=inputs["input_ids"])
     return tokenizer.decode(outputs[0], skip_special_tokens=True)
+```
 
 # Example usage
-bash
-```
+```bash
 banglish_text = "Ami ekhon boro hoyechi"
 bengali_text = transliterate_banglish(banglish_text)
 print(f"Transliterated Bengali: {bengali_text}")
@@ -104,7 +99,7 @@ Mofa's Kitchen Buddy is a backend system powered by a Large Language Model (LLM)
 - **Express.js**: Web framework for building APIs.
 - **File System (fs)**: Used for reading and writing ingredients and recipes data from text files.
 - **JSON**: For storing ingredients and recipes in a structured format.
-- **Large Language Model (LLM)**: Integrated to interact with users and suggest recipes.
+- **Large Language Model (LLM)**: Integrated with Groq to interact with users and suggest recipes.
 
 ## API Endpoints
 
@@ -143,6 +138,39 @@ The data is stored in JSON format within the `data` folder:
 - **ingredients.txt**: Stores the list of ingredients with details like name, quantity, and unit.
 - **recipes.txt**: Stores favorite recipes with details like name, ingredients, instructions, and category.
 
+  Example Usage
+Add Ingredients:
+Make a POST request to /ingredients with the following JSON body:
+```bash
+{
+  "name": "Sugar",
+  "quantity": "200",
+  "unit": "grams"
+}
+```
+
+Get All Ingredients:
+Make a GET request to /getingredients to retrieve the list of all ingredients.
+
+Add Recipes:
+Make a POST request to /recipes with the following JSON body:
+```bash
+{
+  "name": "Chocolate Cake",
+  "ingredients": ["Flour", "Sugar", "Eggs", "Butter"],
+  "instructions": "Mix all ingredients and bake for 30 minutes at 350°F.",
+  "category": "Dessert"
+}
+```
+Search Recipes by Ingredients:
+Make a POST request to /recipes/search with the following JSON body:
+
+```bash
+{
+  "availableIngredients": ["Sugar", "Flour"]
+}
+```
+
 ## Setup Instructions
 
 1. Clone the repository to your local machine:
@@ -161,35 +189,7 @@ The data is stored in JSON format within the `data` folder:
    npm install
    ```
 4. Run the server
-  ```bash
-  node server.js
-  ```
-Example Usage
-Add Ingredients:
-Make a POST request to /ingredients with the following JSON body:
+   ```bash
+   node server.js
+   ```
 
-
-{
-  "name": "Sugar",
-  "quantity": "200",
-  "unit": "grams"
-}
-Get All Ingredients:
-Make a GET request to /getingredients to retrieve the list of all ingredients.
-
-Add Recipes:
-Make a POST request to /recipes with the following JSON body:
-
-{
-  "name": "Chocolate Cake",
-  "ingredients": ["Flour", "Sugar", "Eggs", "Butter"],
-  "instructions": "Mix all ingredients and bake for 30 minutes at 350°F.",
-  "category": "Dessert"
-}
-Search Recipes by Ingredients:
-Make a POST request to /recipes/search with the following JSON body:
-
-
-{
-  "availableIngredients": ["Sugar", "Flour"]
-}
