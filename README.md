@@ -73,13 +73,13 @@ Learning Rate: 5e-5
 Batch Size: 8
 ```
 
-#Results
+Results
 The fine-tuned model achieved the following training and validation losses:
 
--Epoch 1: Training Loss: 22.4071, Validation Loss: 7.8087
--Epoch 2: Training Loss: 3.7735, Validation Loss: 1.0182
--Epoch 3: Training Loss: 1.3876, Validation Loss: 0.4040
+Epoch 1: Training Loss: 22.4071, Validation Loss: 7.8087
+Epoch 2: Training Loss: 3.7735, Validation Loss: 1.0182
+Epoch 3: Training Loss: 1.3876, Validation Loss: 0.4040
 
-#Model Repository
+Model Repository
 You can access the fine-tuned model on Hugging Face at the following link:
 Banglish-to-Bengali Model
